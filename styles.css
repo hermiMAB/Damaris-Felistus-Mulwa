@@ -1,0 +1,95 @@
+/* --- Base (from your original) --- */
+body { 
+  padding-top: 64px; 
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+  color: #222; 
+}
+.page { 
+  max-width: 1100px; 
+}
+.footer { 
+  background:#f7f7f7; 
+  border-top:1px solid #eee; 
+  padding:12px 0; 
+}
+.nav-footer { 
+  font-size:.95rem; 
+  color:#333; 
+}
+.about-links .btn { 
+  border-radius:999px; 
+}
+img.img-fluid { 
+  max-width:100%; 
+  height:auto; 
+}
+h3 { 
+  margin-top:0; 
+}
+
+/* ---- Primary color setup ---- */
+:root {
+  --bs-primary: #0d47a1;   /* deep blue */
+  --bs-primary-rgb: 13, 71, 161;
+}
+.navbar { 
+  background-color: var(--bs-primary) !important; 
+}
+
+/* ---- Navbar links ---- */
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: color .2s ease, background-color .2s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus-visible {
+  color: #ffd700 !important; /* gold text */
+  background-color: rgba(255,255,255,0.15); /* soft glow */
+}
+
+/* Active page (gold + bold + subtle bg) */
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #ffd700 !important; 
+  background-color: rgba(255,255,255,0.15) !important;
+  font-weight: 600;
+}
+
+/* Card hover effect */
+.card { 
+  transition: transform .3s ease, box-shadow .3s ease; 
+}
+.card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15); 
+}
+
+/* Buttons hover */
+.about-links .btn { 
+  border: 1px solid #0d47a1; 
+  color: #0d47a1; 
+  background-color: #fff; 
+  transition: all .2s ease;
+}
+.about-links .btn:hover { 
+  background-color: #0d47a1; 
+  color: #fff; 
+  border-color: #0d47a1;
+}
+
+/* Footer text links */
+.footer { 
+  background-color: #0d47a1; 
+  color: #fff; 
+}
+.footer a { 
+  color: #ffd700; 
+  text-decoration: none; 
+}
+.footer a:hover { 
+  text-decoration: underline; 
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects & Consultancy - Damaris Felistus Mulwa</title>
+<link href="files/logo.png" rel="icon" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="nav-fixed fullcontent">
+
+<header class="headroom fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Damaris Felistus Mulwa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research & Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching & Mentorship</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects & Consultancy</a></li>
+          <li class="nav-item"><a class="nav-link" href="awards.html">Awards & Memberships</a></li>
+          <li class="nav-item"><a class="nav-link" href="CV.html">CV & Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Highlight the active nav item automatically
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const currentPage = window.location.pathname.split("/").pop() || "index.html"; 
+
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+
+<main class="container mt-5 pt-4">
+  <h2 class="mb-4">Research & Publications</h2>
+
+  <!-- Research Interests -->
+  <section class="mb-5">
+    <h4>Research Interests</h4>
+    <ul>
+      <li>Mathematical Modelling & Applied Statistics</li>
+      <li>Machine Learning & Data Science Applications</li>
+      <li>Time Series Analysis & Forecasting</li>
+      <li>Spatial Statistics & Epidemiological Modelling</li>
+      <li>Public Health and Agriculture Analytics</li>
+    </ul>
+  </section>
+
+  <!-- Publications -->
+  <section>
+    <h4>Selected Publications</h4>
+    <div class="list-group">
+      <div class="list-group-item">
+        <i class="bi bi-journal-text text-primary"></i>
+        <strong>Rift Valley Fever Forecasting Using Machine Learning Models</strong><br>
+        <em>PLOS Global Public Health</em>
+      </div>
+      <div class="list-group-item">
+        <i class="bi bi-journal-text text-primary"></i>
+        <strong>Food Price Analysis and Statistical Modelling</strong><br>
+        <em>Food and Humanity</em>
+      </div>
+      <div class="list-group-item">
+        <i class="bi bi-journal-text text-primary"></i>
+        <strong>Machine Learning in Epidemiology: Applications for Africa</strong><br>
+        <em>Big Data and Cognitive Computing</em>
+      </div>
+      <div class="list-group-item">
+        <i class="bi bi-journal-text text-primary"></i>
+        <strong>Finite Population Estimation in Developing Contexts</strong><br>
+        <em>PLOS Global Public Health</em>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer bg-primary text-white py-3 mt-5">
+  <div class="container d-flex justify-content-between">
+    <div>© 2025 Damaris Felistus Mulwa</div>
+    <div>Assistant Lecturer, JKUAT</div>
+    <div><small>Made with Bootstrap</small></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Damaris Felistus Mulwa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- your CSS file -->
+</head>
+<body>
+
+<header class="headroom fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Damaris Felistus Mulwa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research & Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching & Mentorship</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects & Consultancy</a></li>
+          <li class="nav-item"><a class="nav-link" href="awards.html">Awards & Memberships</a></li>
+          <li class="nav-item"><a class="nav-link" href="cv.html">CV & Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Auto-highlight active nav link
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const currentPage = window.location.pathname.split("/").pop() || "index.html"; 
+
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
+</script>
+
+<main class="container mt-5 pt-4">
+  <div class="row g-4">
+    <div class="col-lg-4">
+      <img src="files/dr.Damaris.png" alt="Damaris Felistus Mulwa" class="img-fluid rounded shadow">
+      <div class="card mt-3">
+        <div class="card-body">
+          <p class="mb-1"><strong>Email:</strong> <a href="mailto:mulwadamaris01@gmail.com">mulwadamaris01@gmail.com</a></p>
+          <p class="mb-1"><strong>Phone:</strong> +254 715 045 051</p>
+          <p class="mb-1"><strong>Address:</strong> P.O. Box 62000-00200, Nairobi, Kenya</p>
+          <p class="mb-0"><strong>Citizenship:</strong> Kenyan</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <h2>About Me</h2>
+      <p>
+        I am an Assistant Lecturer in the Department of Statistics and Actuarial Sciences at
+        <a href="https://www.jkuat.ac.ke/" target="_blank">JKUAT</a> and a Ph.D. candidate in Mathematics at
+        <a href="https://www.sua.ac.tz/" target="_blank">Sokoine University of Agriculture</a> (2021–2025).
+        My research and teaching focus on applied statistics, mathematical modelling, and data science for
+        human and animal health, food systems, and policy applications.
+      </p>
+
+      <h4 class="mt-4">Objective</h4>
+      <p>
+        To contribute to academic excellence, research innovation, and capacity building in Statistics,
+        Applied Mathematics, and Data Science, with emphasis on sustainable development and evidence-based policymaking.
+      </p>
+
+      <h4 class="mt-4">Research & Teaching Interests</h4>
+      <ul>
+        <li>Mathematical Modelling & Statistical Inference</li>
+        <li>Machine Learning & Data Science</li>
+        <li>Time Series Analysis & Forecasting</li>
+        <li>Spatial Statistics & Epidemiological Modelling</li>
+        <li>Applications in Public Health and Agriculture</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="footer bg-primary text-white py-3 mt-5">
+  <div class="container d-flex justify-content-between">
+    <div>© 2025 Damaris Felistus Mulwa</div>
+    <div>Assistant Lecturer, JKUAT</div>
+    <div><small>Made with Bootstrap</small></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
